@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="account_str_oldpassword">原密码</string>
+    <string name="account_account_str_oldpassword_hint">请输入旧密码</string>
+    <string name="account_str_newpassword">新密码</string>
+    <string name="account_str_newpassword_hint">请输入新密码</string>
+    <string name="account_str_newpassword_again">确认密码</string>
+</resources>

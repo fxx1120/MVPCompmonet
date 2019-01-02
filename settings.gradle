@@ -1,0 +1,1 @@
+include ':app', ':commonsdk', ':commonres', ':commonservice', ':commonmanager', ':baseUi', ':module-account', ':module-find',  'module-main'

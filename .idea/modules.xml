@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MVPCompmonet.iml" filepath="$PROJECT_DIR$/MVPCompmonet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParkCompmonet.iml" filepath="$PROJECT_DIR$/ParkCompmonet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseUi/baseUi.iml" filepath="$PROJECT_DIR$/baseUi/baseUi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseUi/baseUi.iml" filepath="$PROJECT_DIR$/baseUi/baseUi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonmanager/commonmanager.iml" filepath="$PROJECT_DIR$/commonmanager/commonmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonmanager/commonmanager.iml" filepath="$PROJECT_DIR$/commonmanager/commonmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonres/commonres.iml" filepath="$PROJECT_DIR$/commonres/commonres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonres/commonres.iml" filepath="$PROJECT_DIR$/commonres/commonres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonsdk/commonsdk.iml" filepath="$PROJECT_DIR$/commonsdk/commonsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonsdk/commonsdk.iml" filepath="$PROJECT_DIR$/commonsdk/commonsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonservice/commonservice.iml" filepath="$PROJECT_DIR$/commonservice/commonservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonservice/commonservice.iml" filepath="$PROJECT_DIR$/commonservice/commonservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-account/module-account.iml" filepath="$PROJECT_DIR$/module-account/module-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-account/module-account.iml" filepath="$PROJECT_DIR$/module-account/module-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-find/module-find.iml" filepath="$PROJECT_DIR$/module-find/module-find.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-find/module-find.iml" filepath="$PROJECT_DIR$/module-find/module-find.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-main/module-main.iml" filepath="$PROJECT_DIR$/module-main/module-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-main/module-main.iml" filepath="$PROJECT_DIR$/module-main/module-main.iml" />
+    </modules>
+  </component>
+</project>

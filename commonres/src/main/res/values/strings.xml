@@ -1,0 +1,16 @@
+<resources>
+    <string name="public_app_name">AppComponent</string>
+    <string name="public_module_name">app</string>
+    <string name="public_loading">加载中</string>
+
+    <string name="public_prompt_email">请输入手机号</string>
+    <string name="public_prompt_password">请输入密码</string>
+
+    <string name="public_acount_login">登  录</string>
+
+
+    <string name="public_dialog_default_title">Here\'s a message!</string>
+    <string name="public_dialog_ok">OK</string>
+    <string name="public_dialog_cancel">Cancel</string>
+    <string name="public_LOADING">Loading...</string>
+</resources>

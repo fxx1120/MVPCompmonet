@@ -1,0 +1,15 @@
+<resources>
+    <style name="account_inputstyle">
+        <!-- 底部线 默认颜色 -->
+        <item name="colorControlNormal">#f3f4f5</item>
+        <!-- 底部线 EditText激活时颜色 -->
+        <item name="colorControlActivated">@color/public_colorPrimary</item>
+        <!-- 设置光标 -->
+        <item name="android:textCursorDrawable">@drawable/account_line</item>
+    </style>
+
+    <style name="account_textinputapptheme" parent="Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/public_colorPrimary</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

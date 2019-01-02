@@ -1,0 +1,100 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["multidex"]
+    //分包
+    api 'me.jessyan:arms:2.4.1'
+    //mvp 框架
+    //tools
+    api(rootProject.ext.dependencies["arouter"]) {//路由
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+    }
+    api rootProject.ext.dependencies["retrofit-url-manager"]
+    //多url
+    api 'com.facebook.fresco:animated-gif:1.0.0'
+    //fresco
+    api('com.facebook.fresco:fresco:1.0.0') {
+        exclude group: 'com.android.support'
+    }
+    api 'com.pgyersdk:sdk:3.0.2'//pgy
+    api('com.yalantis:ucrop:2.2.0') {//图片裁剪
+        exclude group: 'com.android.support'
+        exclude group: 'com.squareup.okio'
+        exclude group: 'com.squareup.okhttp3'
+    }
+    api rootProject.ext.dependencies["photoview"]
+    //图片查看
+    api 'com.github.fxx028:FxAdapter:1.0'
+    //简单adapter
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //baserecyclerviewadapterhelper
+    api 'me.yokeyword:indexablerecyclerview:1.3.0'
+    //列表索引
+    api 'com.google.zxing:core:3.2.0'
+    //zxing
+    api 'com.journeyapps:zxing-android-embedded:3.5.0'
+    api 'com.liulishuo.filedownloader:library:1.6.5'
+    //文件下载
+    api('com.wdullaer:materialdatetimepicker:3.4.0') {//时间选择器
+        exclude group: 'com.android.support'
+    }
+    api 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    //图表
+    api 'com.andrognito.patternlockview:patternlockview:1.0.0'
+    //图形解锁
+    api 'com.andrognito.pinlockview:pinlockview:2.1.0'
+    //数字解锁
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //tablayout
+    api('io.socket:socket.io-client:0.8.3') {//socket
+        exclude group: 'org.json', module: 'json'
+    }
+    api('com.zhihu.android:matisse:0.5.0-alpha4') {//知乎图片选择
+        exclude group: 'com.android.support'
+    }
+    api 'com.youth.banner:banner:1.4.10'
+    //轮播图
+    api 'top.zibin:Luban:1.1.8'
+    //图片压缩
+    api 'com.github.lzyzsd:jsbridge:1.0.4'
+    // jsbridge
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-15'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-15'
+    api 'com.pnikosis:materialish-progress:1.0'
+
+}

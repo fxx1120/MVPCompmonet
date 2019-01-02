@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/account_textinputapptheme"
+        app:hintAnimationEnabled="true"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="60dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/account_inputstyle"
+            android:hint="@string/public_prompt_email"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/public_b2b2b2"
+            android:singleLine="true"
+            android:textColorHint="@color/public_b2b2b2"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/account_textinputapptheme"
+        app:hintAnimationEnabled="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/public_prompt_password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="@dimen/sp_14"
+            android:theme="@style/account_inputstyle"
+            android:textColor="@color/public_b2b2b2"
+            android:singleLine="true"
+            android:textColorHint="@color/public_b2b2b2"
+            android:textCursorDrawable="@null"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="@dimen/sp_14"
+        android:gravity="center"
+        android:id="@+id/txt_login"
+        android:clickable="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:background="@drawable/account_shape_btn_cicle"
+        android:text="@string/public_acount_login"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="22dp"
+        android:gravity="bottom|center"
+        android:text="阳光并联 责德合活"/>
+</LinearLayout>
